@@ -31,7 +31,7 @@ import com.plcoding.cryptotracker.ui.theme.CryptoTrackerTheme
 @Composable
 fun InfoCard(
     title: String,
-    formatedText: String,
+    formattedText: String,
     icon: ImageVector,
     modifier: Modifier = Modifier,
     contentColor: Color = MaterialTheme.colorScheme.onSurface,
@@ -74,7 +74,7 @@ fun InfoCard(
         }
         Spacer(modifier = Modifier.height(8.dp))
         AnimatedContent(
-            targetState = formatedText,
+            targetState = formattedText,
             modifier = Modifier.align(Alignment.CenterHorizontally),
             label = "ValueAnimation"
         ) { formatedText ->
@@ -106,7 +106,7 @@ private fun InfoCardPreview() {
     CryptoTrackerTheme {
         InfoCard(
             title = "Price",
-            formatedText = "$ 63,157.44",
+            formattedText = "$ 63,157.44",
             icon = ImageVector.vectorResource(R.drawable.dollar)
         )
     }
