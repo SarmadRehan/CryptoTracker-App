@@ -48,6 +48,7 @@ import com.plcoding.cryptotracker.crypto.presentation.models.toDisplayableNumber
 import com.plcoding.cryptotracker.ui.theme.CryptoTrackerTheme
 import com.plcoding.cryptotracker.ui.theme.greenBackground
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun CoinDetailScreen(
     state: CoinListState,
